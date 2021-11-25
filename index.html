@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/35/89/43/3589432a9ff017b409d7e53ef390eb76.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Komi-san webpage</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Komi-san webpage" />
+    <meta
+      name="description"
+      content="Socially anxious high school student Shoko Komi’s greatest dream is to make some friends, but everyone at school mistakes her crippling social anxiety for cool reserve! With the whole student body keeping their distance and Komi unable to utter a single word, friendship might be forever beyond her reach."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://komi-shouko-website.netlify.app/"
+    />
+    <meta property="og:title" content="Komi-san webpage" />
+    <meta
+      property="og:description"
+      content="Socially anxious high school student Shoko Komi’s greatest dream is to make some friends, but everyone at school mistakes her crippling social anxiety for cool reserve! With the whole student body keeping their distance and Komi unable to utter a single word, friendship might be forever beyond her reach."
+    />
+    <meta property="og:image" content="" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://komi-shouko-website.netlify.app/"
+    />
+    <meta property="twitter:title" content="Komi-san webpage" />
+    <meta
+      property="twitter:description"
+      content="Socially anxious high school student Shoko Komi’s greatest dream is to make some friends, but everyone at school mistakes her crippling social anxiety for cool reserve! With the whole student body keeping their distance and Komi unable to utter a single word, friendship might be forever beyond her reach."
+    />
+    <meta property="twitter:image" content="" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div>Komi-san Wa Komyoshou Desu</div>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-komi">About Komi</a></li>
+          <li><a href="#more">More</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h3 id="home">
+      <q> The journey to 100 friends begins with a single conversation. </q>
+    </h3>
+    <div class="container">
+      <details>
+        <summary>About the Manga</summary>
+        <p>
+          Socially anxious high school student Shoko Komi’s greatest dream is to
+          make some friends, but everyone at school mistakes her crippling
+          social anxiety for cool reserve! With the whole student body keeping
+          their distance and Komi unable to utter a single word, friendship
+          might be forever beyond her reach.
+          <br />
+          <br />
+          Timid Tadano is a total wallflower, and that’s just the way he likes
+          it. But all that changes when he finds himself alone in a classroom on
+          the first day of high school with the legendary Komi. He quickly
+          realizes she isn’t aloof—she’s just super awkward. Now he’s made it
+          his mission to help her on her quest to make 100 friends!
+        </p>
+      </details>
+
+      <iframe
+        width="972"
+        height="347"
+        src="https://www.youtube.com/embed/fp8V8OXDeZc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="sect-2" id="about-komi">
+      <h1>About Komi</h1>
+      <hr />
+      <p>
+        Shouko is described by her admirers as a girl with glossy dark purple /
+        black hair that flows to her lower back, a slender body and an
+        incredibly beautiful face. She is usually seen wearing her school's
+        uniform.
+      </p>
+    </div>
+    <div class="sect-3" id="more">
+      <div>
+        <h1>Tadano Hitohito</h1>
+        <p>
+          Hitohito is often described as an ordinary student with normal looks
+          and average height and weight.
+        </p>
+      </div>
+
+      <div>
+        <h1>Najimi Osana</h1>
+        <p>
+          They are also the complete antithesis of Komi Shouko; possessing
+          phenomenal communication ability to get close to anyone within a few
+          minutes of meeting them.
+        </p>
+      </div>
+
+      <div>
+        <h1>Himiko Agari</h1>
+        <p>
+          A sweet girl, but weak against the stress of interpersonal relations
+          so that just having one person looking at her can cause her to blush,
+          get convulsions, hyperventilate, become inarticulate, have cold
+          sweats, and have stomach pains, among others.
+        </p>
+      </div>
+    </div>
+
+    <div class="sect-4">
+      <h1>OP, ED, and OST</h1>
+      <div class="songs">
+        <span>
+          <h2>Cinderella - Cider Girl ( OP )</h2>
+          <audio
+            loop
+            controls
+            src="audio/Komi-san Can't Communicate - Opening Full『Cinderella』by Cidergirl.mp3"
+          ></audio>
+        </span>
+
+        <span>
+          <h2>Hikare Inochi - Kitri ( ED )</h2>
+          <audio
+            loop
+            controls
+            src="audio/Komi-san wa, Comyushou desu Ending Full Song _ Hikare Inochi - Kitri.mp3"
+          ></audio>
+        </span>
+
+        <span>
+          <h2>Chalkboard Scene ( OST )</h2>
+          <audio
+            loop
+            controls
+            src="audio/Komi-san wa, Comyushou desu OST  (Episode 1 chalkboard scene).mp3"
+          ></audio>
+        </span>
+      </div>
+      <div class="next-page">
+        <h1><a href="index-2.html">Read More -></a></h1>
+      </div>
+    </div>
+
+    <script>
+      var audio = document.querySelectorAll('audio');
+
+      audio.forEach((element) => (element.volume = 0.3));
+
+      document.addEventListener(
+        'play',
+        function (e) {
+          var audios = document.querySelectorAll('audio');
+          for (var i = 0, len = audios.length; i < len; i++) {
+            if (audios[i] != e.target) {
+              audios[i].pause();
+            }
+          }
+        },
+        true
+      );
+    </script>
+  </body>
+</html>

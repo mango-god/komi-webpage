@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/35/89/43/3589432a9ff017b409d7e53ef390eb76.png"
+    />
+    <link rel="stylesheet" href="css/style-2.css" />
+
+    <title>Komi-san webpage</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div><a href="index.html">Komi-san Wa Komyoshou Desu</a></div>
+          <li><a href="#home">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="sect-1">
+      <div class="part-1">
+
+        <h1>Fun Fact</h1>
+        <p>
+          In episode 1, the animators used a different ED ( ending theme ) for the anime, they only later changed it from this to the current one. Take a listen:
+          <blockquote>
+            <h2>Sympathy - Kitri</h2>
+            <br />
+            <audio controls src="audio/Sympathy.mp3"></audio>
+          </blockquote>
+        </p>
+      </div>
+
+      <hr width="1" size="200%">
+
+      <div class="part-2">
+        <h1>OST 2</h1>
+        <p>
+          This OST usually plays when Komi is going to make friends with someone. The way I see it, it's played like this because of Komi's "upbeat" personality, and how she really wants to make friends with people, but it also shows the calmer side of her at the same time.
+        </p>
+        <blockquote>
+          <h2>
+            Want to Befriend Komi-san
+          </h2>
+          <audio controls src="audio/Komi Can't Communicate Episode 4 OST - Want to be Friend with Komi-san [Piano Tutorial + sheet].mp3"></audio>
+        </blockquote>
+        
+      </div>
+    </div>
+
+    
+    <div class="sect-2">
+
+      <span>
+        <h1>Komi's theme</h1>
+        <p>
+          I couldn't find a video with this theme alone, since this is the only one I could find. I find this theme really soothing because it captures the beauty of Komi-san herself through music.
+        </p>
+      </span>
+
+      <iframe 
+        width="672" 
+        height="347" 
+        src="https://www.youtube.com/embed/ioxpYy7QGNw"   title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <footer>
+      <p>
+        Thank you for checking out my oddly bias webpage, you can check the code <a href="">here.</a>
+      </p>
+    </footer>
+
+    <script>
+      var audio = document.querySelectorAll('audio');
+
+      audio.forEach((element) => (element.volume = 0.5));
+
+      document.addEventListener(
+        'play',
+        function (e) {
+          var audios = document.querySelectorAll('audio');
+          for (var i = 0, len = audios.length; i < len; i++) {
+            if (audios[i] != e.target) {
+              audios[i].pause();
+            }
+          }
+        },
+        true
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+$clr-1: #1a0d1a;
+$clr-2: #2d1f42;
+$clr-3: #fbf9f7;
+$clr-4: #060013;
+$clr-5: #0a050b;
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scroll-padding: 200px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $clr-3;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-style: italic;
+  color: $clr-3;
+  padding: 20px;
+  background: #0a050bef;
+
+  ul {
+    font-size: 30px;
+    display: flex;
+    gap: 5.5rem;
+    list-style-type: none;
+
+    div {
+      cursor: pointer;
+      margin-right: auto;
+    }
+    li {
+      margin-right: 10rem;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    li:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+.sect-1 {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/143/291/637/anime-komi-can-t-communicate-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #111;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  h1,
+  h2 {
+    font-family: 'Fira Sans Condensed';
+  }
+  p {
+    line-height: 1.6;
+    max-width: 500px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  hr {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-right: 5px double $clr-3;
+  }
+
+  blockquote {
+    color: $clr-5;
+    background: #fbf9f7d5;
+    width: max-content;
+    outline: 3px dotted $clr-3;
+    padding: 20px 50px;
+  }
+}
+
+.sect-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: $clr-3;
+  height: 50vh;
+  padding: 70px 0;
+  color: $clr-5;
+
+  h1 {
+    font-family: 'Rubik', sans-serif;
+  }
+  p {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  span {
+    max-width: 300px;
+  }
+
+  iframe {
+    outline: 5px solid $clr-5;
+    padding: 30px;
+  }
+
+  span,
+  iframe {
+    margin: auto 0;
+  }
+}
+
+footer {
+  background-image: url(https://wallpaperaccess.com/full/2591837.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #111;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 55vh;
+
+  display: grid;
+  place-content: center;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    letter-spacing: 1px;
+    font-size: 23px;
+    margin: auto;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+}
